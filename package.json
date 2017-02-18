@@ -1,6 +1,6 @@
 {
   "name": "node-test-helpers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test helpers library for nodeJS",
   "main": "lib/index.js",
   "engines": {
@@ -32,6 +32,8 @@
     "chai": "3.5.0",
     "chai-http": "3.0.0",
     "dirty-chai": "1.2.2",
+    "proxyquire": "1.7.11",
+    "rewire": "2.5.2",
     "sinon": "1.17.7",
     "sinon-chai": "2.8.0"
   },
