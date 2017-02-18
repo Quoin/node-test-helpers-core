@@ -1,0 +1,55 @@
+{
+  "name": "node-test-helpers",
+  "version": "0.1.0",
+  "description": "Test helpers library for nodeJS",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "scripts": {
+    "test": "mocha 'lib/**/*.spec.unit.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quoin/node-test-helpers.git"
+  },
+  "keywords": [
+    "nodejs",
+    "testing",
+    "helpers"
+  ],
+  "author": {
+    "name": "Hữu Ðà Trần",
+    "email": "huuda.tran@quoininc.com",
+    "url": "https://www.quoininc.com/staff/huu-da-tran/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Quoin/node-test-helpers/issues"
+  },
+  "homepage": "https://github.com/Quoin/node-test-helpers#readme",
+  "dependencies": {
+    "chai": "3.5.0",
+    "chai-http": "3.0.0",
+    "dirty-chai": "1.2.2",
+    "sinon": "1.17.7",
+    "sinon-chai": "2.8.0"
+  },
+  "peerDependencies": {
+    "mocha": ">=3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "3.15.0",
+    "eslint-config-airbnb-base": "11.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "grunt": "1.0.1",
+    "grunt-eslint": "19.0.0",
+    "grunt-jsbeautifier": "0.2.13",
+    "grunt-run": "0.6.0",
+    "istanbul": "0.4.5",
+    "jit-grunt": "0.10.0",
+    "load-grunt-config": "0.19.2",
+    "mocha": "3.2.0",
+    "time-grunt": "1.4.0"
+  }
+}

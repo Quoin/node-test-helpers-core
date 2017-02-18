@@ -1,0 +1,12 @@
+instrumentation:
+    verbose: true
+    root: .
+    include-all-sources: true
+    excludes:
+        - '**/*.spec.*.js'
+        - 'grunt/**/*.js'
+        - '*.js'
+reporting:
+    reports:
+        - lcov
+        - cobertura
