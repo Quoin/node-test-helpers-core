@@ -1,13 +1,14 @@
 {
   "name": "node-test-helpers",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Test helpers library for nodeJS",
   "main": "lib/index.js",
   "engines": {
     "node": ">=6.9.0"
   },
   "scripts": {
-    "test": "mocha 'lib/**/*.spec.unit.js'"
+    "test": "mocha 'lib/**/*.spec.unit.js'",
+    "coverage": "istanbul cover --dir reports/coverage/unit node_modules/.bin/_mocha -- 'lib/**/*.spec.unit.js'"
   },
   "repository": {
     "type": "git",
