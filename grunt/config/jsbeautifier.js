@@ -6,18 +6,21 @@ module.exports = {
                 fileTypes: [
                     '.babelrc',
                     '.eslintrc',
+                    '.nycrc',
                     '.json',
-                    '.<%= packageJson.name %>rc',
+                    '.<%= packageJson.name %>rc'
                 ],
-                indentSize: 2,
-            },
+                indentSize: 2
+            }
         },
         src: [
             '.babelrc',
             '.eslintrc',
+            '.nycrc',
             '*.json',
+            '.*.json',
             '.<%= packageJson.name %>rc',
-            'server/**/*.json',
-        ],
-    },
+            'server/**/*.json'
+        ]
+    }
 };

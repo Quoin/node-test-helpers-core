@@ -1,14 +1,16 @@
 {
   "name": "node-test-helpers",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Test helpers library for nodeJS",
   "main": "lib/index.js",
   "engines": {
     "node": ">=6.9.0"
   },
   "scripts": {
-    "test": "mocha 'lib/**/*.spec.unit.js'",
-    "coverage": "istanbul cover --dir reports/coverage/unit node_modules/.bin/_mocha -- 'lib/**/*.spec.unit.js'"
+    "test:unit": "mocha 'lib/**/*.unit.test.js'",
+    "test": "npm run test:unit",
+    "coverage:unit": "nyc --report-dir=reports/coverage/unit npm run test:unit",
+    "coverage": "npm run coverage:unit"
   },
   "repository": {
     "type": "git",
@@ -44,17 +46,18 @@
   },
   "devDependencies": {
     "eslint": "3.15.0",
-    "eslint-config-airbnb-base": "11.1.0",
-    "eslint-plugin-import": "2.2.0",
+    "eslint-config-standard": "7.0.0",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "2.1.1",
     "grunt": "1.0.1",
     "grunt-eslint": "19.0.0",
     "grunt-jsbeautifier": "0.2.13",
     "grunt-run": "0.6.0",
-    "istanbul": "0.4.5",
     "jit-grunt": "0.10.0",
     "load-grunt-config": "0.19.2",
     "lodash": "4.17.4",
     "mocha": "3.2.0",
+    "nyc": "10.1.2",
     "time-grunt": "1.4.0"
   }
 }

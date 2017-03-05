@@ -1,13 +1,13 @@
 module.exports = {
     options: {
-        reporter: 'spec',
+        reporter: 'spec'
     },
     unit: {
         options: {
-            captureFile: 'reports/unit-test-results.txt',
+            captureFile: 'reports/unit-test-results.txt'
         },
         src: [
-            'lib/**/*.spec.unit.js',
-        ],
-    },
+            'lib/**/*.spec.unit.js'
+        ]
+    }
 };

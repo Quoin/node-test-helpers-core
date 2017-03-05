@@ -4,7 +4,6 @@ const timeGrunt = require('time-grunt');
 
 const packageJson = require('./package.json');
 
-
 module.exports = function gruntfile(grunt) {
     timeGrunt(grunt);
 
@@ -12,10 +11,10 @@ module.exports = function gruntfile(grunt) {
         configPath: path.join(__dirname, 'grunt', 'config'),
         jitGrunt: {
             customTasksDir: path.join('grunt', 'tasks'),
-            staticMappings: {},
+            staticMappings: {}
         },
         data: {
-            packageJson,
-        },
+            packageJson
+        }
     });
 };

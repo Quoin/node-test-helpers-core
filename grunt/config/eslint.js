@@ -1,51 +1,51 @@
 module.exports = {
     options: {
-        fix: true,
+        fix: true
     },
 
     dev: {
         options: {
             rules: {
                 'import/no-extraneous-dependencies': 0,
-                indent: [2, 4],
-            },
+                indent: [2, 4]
+            }
         },
         src: [
             '*.js',
-            'grunt/**/*.js',
-        ],
+            'grunt/**/*.js'
+        ]
     },
 
     node: {
         options: {
             envs: [
-                'es6',
+                'es6'
             ],
             ecmaFeatures: {
-                modules: false,
+                modules: false
             },
             rules: {
-                indent: [2, 4],
-            },
+                indent: [2, 4]
+            }
         },
         src: [
             'lib/**/*.js',
-            '!lib/**/*.spec.*.js',
-        ],
+            '!lib/**/*.*.test.js'
+        ]
     },
 
     nodeTest: {
         options: {
             envs: [
-                'mocha',
+                'mocha'
             ],
             rules: {
                 'import/no-extraneous-dependencies': 0,
-                indent: [2, 4],
-            },
+                indent: [2, 4]
+            }
         },
         src: [
-            'lib/**/*.spec.*.js',
-        ],
-    },
+            'lib/**/*.*.test.js'
+        ]
+    }
 };
