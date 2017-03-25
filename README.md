@@ -7,13 +7,13 @@ project.
 
 To add the library to your project:
 
-    npm install --save-dev git+ssh://git@github.com/Quoin/node-test-helpers.git
+    npm install --save-dev @quoin/node-test-helpers
 
 ## Usage
 
 An example of usage:
 
-    const testHelpers = require('node-test-helpers');
+    const testHelpers = require('@quoin/node-test-helpers');
 
     const moduleToTest = require('./index');
 
