@@ -6,5 +6,12 @@ module.exports = {
             'run',
             'coverage:unit'
         ]
+    },
+    'publish': {
+        cmd: 'npm',
+        args: [
+            'publish',
+            '--access', 'public'
+        ]
     }
 };

@@ -1,6 +1,6 @@
 {
-  "name": "node-test-helpers",
-  "version": "0.1.5",
+  "name": "@quoin/node-test-helpers",
+  "version": "0.1.6",
   "description": "Test helpers library for nodeJS",
   "main": "lib/index.js",
   "engines": {
@@ -10,7 +10,8 @@
     "test:unit": "mocha 'lib/**/*.unit.test.js'",
     "test": "npm run test:unit",
     "coverage:unit": "nyc --report-dir=reports/coverage/unit npm run test:unit",
-    "coverage": "npm run coverage:unit"
+    "coverage": "npm run coverage:unit",
+    "prepublish": "grunt"
   },
   "repository": {
     "type": "git",
