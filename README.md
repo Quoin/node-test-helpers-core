@@ -27,3 +27,35 @@ An example of usage:
 
 See the [lib/index.js](lib/index.js) file to see what libraries are imported and
 refer to their respective documentation.
+
+## Examples
+
+### verifyHal
+
+To verify that a portion of a response (or the entire reponse is a valid HAL:
+
+    it("should be a valid HAL", () => {
+        const someResponseFromServer = requestCall();
+        testHelpers.verifyHal(someResponseFromServer.body);
+    });
+
+### verifyProperties
+
+To verify all properties of an object:
+
+    it("should expose known properties", () => {
+      const clone = _.clone(moduleToTest);
+
+      testHelpers.verifyProperties(clone, 'string', [
+        'prop1',
+        'prop2'
+      ]);
+
+      testHelpers.verifyProperties(clone, 'function', [
+        'prop3',
+        'prop4'
+      ]);
+
+      expect(clone).to.deep.equal({});
+    });
+

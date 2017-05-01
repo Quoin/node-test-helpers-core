@@ -1,8 +1,7 @@
-/.eslintrc.json
+/.eslintrc*.json
+/.npmignore
 /.nyc_output
 /.nycrc
-/grunt
-/Gruntfile.js
 /lib/**/*.test.js
 /reports
 *.tgz
