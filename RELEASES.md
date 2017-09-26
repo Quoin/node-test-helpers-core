@@ -1,5 +1,10 @@
 # Releases
 
+## 0.2.3 - 2017-09-26
+
+- Added chai-immutable and chai-as-promised.
+- Bumped dependencies' versions.
+
 ## 0.2.2 - 2017-07-05
 
 - Exporting `sinon.sandbox`.

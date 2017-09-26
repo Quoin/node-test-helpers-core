@@ -30,6 +30,15 @@ refer to their respective documentation.
 
 ## Examples
 
+### createMocks, createRequest and createResponse
+
+See [node-mocks-http](https://github.com/howardabrams/node-mocks-http) for more
+details.
+
+    it("should set headers", () => {
+      const {req, res} = testHelpers.createMocks();
+    });
+
 ### verifyHal
 
 To verify that a portion of a response (or the entire reponse is a valid HAL:
