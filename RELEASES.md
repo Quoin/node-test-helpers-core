@@ -1,5 +1,9 @@
 # Releases
 
+## 0.3.0 - 2017-10-04
+
+- `npm outdated`, specially for major `mocha`, `sinon`, and `chai`.
+
 ## 0.2.3 - 2017-09-26
 
 - Added chai-immutable and chai-as-promised.
