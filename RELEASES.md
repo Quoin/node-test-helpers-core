@@ -1,5 +1,9 @@
 # Releases
 
+## 0.3.1 - 2017-10-06
+
+- `npm outdated` for `chai` and `mocha`.
+
 ## 0.3.0 - 2017-10-04
 
 - `npm outdated`, specially for major `mocha`, `sinon`, and `chai`.
