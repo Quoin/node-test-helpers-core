@@ -5,3 +5,4 @@
 /lib/**/*.test.js
 /reports
 *.tgz
+/.travis.yml
