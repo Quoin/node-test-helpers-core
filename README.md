@@ -1,5 +1,7 @@
 # node-test-helpers
 
+[![Build Status](https://travis-ci.org/Quoin/node-test-helpers.svg?branch=master)](https://travis-ci.org/Quoin/node-test-helpers)
+
 This is a helper library to limit the number of packages to install in your
 project.
 
