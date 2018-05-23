@@ -1,6 +1,6 @@
 # node-test-helpers-core
 
-[![Build Status](https://travis-ci.org/Quoin/node-test-helpers-core.svg?branch=master)](https://travis-ci.org/Quoin/node-test-helpers-core)
+[![Build Status](https://travis-ci.com/Quoin/node-test-helpers-core.svg?branch=master)](https://travis-ci.com/Quoin/node-test-helpers-core)
 
 This is a helper library to limit the number of packages to install in your
 project. Because of the nature of chai plugins, this library only include the
