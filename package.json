@@ -1,7 +1,7 @@
 {
-  "name": "@quoin/node-test-helpers",
-  "version": "0.3.1",
-  "description": "Test helpers library for nodeJS",
+  "name": "@quoin/node-test-helpers-core",
+  "version": "1.0.0",
+  "description": "Core test helpers library for nodeJS with Chai plugins",
   "main": "lib/index.js",
   "engines": {
     "node": ">=6.9.0"
@@ -13,11 +13,12 @@
     "test:unit": "mocha \"lib/**/*.unit.test.js\"",
     "test": "npm run test:unit",
     "coverage:unit": "nyc --report-dir=reports/coverage/unit npm run test:unit",
-    "coverage": "npm run coverage:unit"
+    "coverage": "npm run coverage:unit",
+    "prepublish": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Quoin/node-test-helpers.git"
+    "url": "git+https://github.com/Quoin/node-test-helpers-core.git"
   },
   "keywords": [
     "nodejs",
@@ -31,37 +32,28 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Quoin/node-test-helpers/issues"
+    "url": "https://github.com/Quoin/node-test-helpers-core/issues"
   },
-  "homepage": "https://github.com/Quoin/node-test-helpers#readme",
+  "homepage": "https://github.com/Quoin/node-test-helpers-core#readme",
   "dependencies": {
-    "chai": "4.1.2",
-    "chai-as-promised": "7.1.1",
-    "chai-http": "3.0.0",
-    "chai-immutable": "next",
-    "dirty-chai": "2.0.1",
-    "immutable": "3.8.2",
-    "lodash": "4.17.4",
-    "node-mocks-http": "1.6.5",
-    "proxyquire": "1.8.0",
-    "rewire": "2.5.2",
-    "sinon": "4.0.1",
-    "sinon-chai": "2.14.0"
-  },
-  "peerDependencies": {
-    "mocha": ">=4.0.0"
+    "chai": "4.1.x",
+    "lodash": "4.17.x",
+    "node-mocks-http": "1.7.x",
+    "proxyquire": "2.0.x",
+    "rewire": "4.0.x",
+    "sinon": "4.0.x"
   },
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "0.2.0",
-    "eslint": "4.8.0",
-    "eslint-config-standard": "10.2.1",
-    "eslint-plugin-html": "3.2.2",
-    "eslint-plugin-import": "2.7.0",
+    "@quoin/eslint-config-quoin": "latest",
+    "eslint": "4.19.x",
+    "eslint-config-standard": "11.0.x",
+    "eslint-plugin-html": "4.0.x",
+    "eslint-plugin-import": "2.12.x",
     "eslint-plugin-json": "1.2.0",
-    "eslint-plugin-node": "5.2.0",
-    "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-standard": "3.0.1",
-    "mocha": "4.0.1",
-    "nyc": "11.2.1"
+    "eslint-plugin-node": "6.0.x",
+    "eslint-plugin-promise": "3.7.x",
+    "eslint-plugin-standard": "3.1.x",
+    "mocha": "5.2.x",
+    "nyc": "11.8.x"
   }
 }

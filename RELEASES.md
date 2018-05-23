@@ -1,5 +1,9 @@
 # Releases
 
+## 1.0.0 - 2018-05-23
+
+- Re-organizing the core into a separate library.
+
 ## 0.3.1 - 2017-10-06
 
 - `npm outdated` for `chai` and `mocha`.

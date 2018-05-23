@@ -1,22 +1,32 @@
-# node-test-helpers
+# node-test-helpers-core
 
-[![Build Status](https://travis-ci.org/Quoin/node-test-helpers.svg?branch=master)](https://travis-ci.org/Quoin/node-test-helpers)
+[![Build Status](https://travis-ci.org/Quoin/node-test-helpers-core.svg?branch=master)](https://travis-ci.org/Quoin/node-test-helpers-core)
 
 This is a helper library to limit the number of packages to install in your
-project.
+project. Because of the nature of chai plugins, this library only include the
+core for your tests. You will need to write a local helper to include all your
+chai plugins,
 
 ## To install
 
 To add the library to your project:
 
-    npm install --save-dev @quoin/node-test-helpers
+    npm install --save-dev @quoin/node-test-helpers-core
 
 ## Usage
 
-An example of usage:
+`local-helper.js`:
 
-    const testHelpers = require('@quoin/node-test-helpers');
+    const testHelpers = require('@quoin/node-test-helpers-core');
+    const dirtyChai = require('dirty-chai');
 
+    testHelpers.chai.use(dirtyChai);
+
+    module.exports = testHelpers;
+
+`file.unit.test.js`:
+
+    const testHelpers = require('./local-helpers');
     const moduleToTest = require('./index');
 
     const expect = testHelpers.expect;
